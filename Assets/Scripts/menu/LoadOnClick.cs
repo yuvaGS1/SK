@@ -11,6 +11,7 @@ public class LoadOnClick : MonoBehaviour {
 
 	void Start()
 	{
+		Debug.Log("Change");
 		GameObject.Find("loading").GetComponent<Text>().text = "Loading . . . ";
 		GameObject.Find ("loading").transform.localScale = new Vector3(0, 0, 0);
 		PlayerPrefs.SetInt ("score", 0);
